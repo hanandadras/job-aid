@@ -4,24 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.9.1/dist/css/uikit.min.css" />
     <title>Job Aid</title>
 </head>
 <body>
-    <header>
-
-    </header>
+    <nav class="uk-background-muted uk-padding-small uk-navbar-container uk-flex uk-flex-row">
+        <h1 class="uk-navbar-left">Job-Aid</h1>
+        <a href="#job-search" class="uk-navbar-right">Job Search</a>
+        <a href="#recent" class="uk-navbar-right">Recent Searches</a>
+    </nav>
 
     <section id="hero">
-
+        <p></p>
     </section>
 
-    <section id="job-search">
-
+    <section id="job-search" class="uk-padding-small">
+        <h2>Job Search</h2>
+        <form>
+            <label>Job Title</label>
+            <input type="text" placeholder="Job Title">
+            <label>Salary</label>
+            <input type="text" placeholder="Expected Salary">
+            <label>Location</label>
+            <input type="text" placeholder="Zip Code">
+        </form>
     </section>
 
-    <section id="favorites">
-
+    <section id="recent" class="uk-padding-small">
+        <h2>Recent Searches</h2>
     </section>
 
     <footer>
