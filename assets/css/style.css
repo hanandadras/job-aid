@@ -1,0 +1,7 @@
+#hero {
+    background-image: url("../images/cytonn-photography-n95VMLxqM2I-unsplash.jpeg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 250px;
+}
