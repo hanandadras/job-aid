@@ -1,4 +1,5 @@
 var formEl = document.querySelector("#job-form");
+var searchHistory = [];
 
 function getAPI(title) {
     fetch("https://job-search4.p.rapidapi.com/monster/search?query=" + title + "&state=CA&page=1", {
@@ -37,12 +38,27 @@ function getZIP(zip) {
 var formHandler = function(event) {
     event.preventDefault();
 
-    title = document.querySelector("input[name='job-title']").value;
+    titleInput = document.querySelector("input[name='job-title']").value;
+    zipInput = document.querySelector("input[name='zip-code']").value;
 
-    getAPI(title);
-    getZIP(95758);
+    getAPI(titleInput);
+    getZIP(zipInput);
+
+    var searchObj = {
+        title: titleInput,
+        zip: zipInput
+    };
+
+    searchHistory.push(searchObj);
+
+    saveTasks(searchHistory);
 
     formEl.reset();
 }
+
+var saveTasks = function (searchObj) {
+    localStorage.setItem("search", searchObj);
+    console.log(searchObj);
+};
 
 formEl.addEventListener("submit", formHandler);
