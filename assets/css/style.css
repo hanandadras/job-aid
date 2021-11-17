@@ -3,6 +3,15 @@
   --color2: yellow;
   --color3: blue;
 }
+
+body {
+  overflow: hidden;
+}
+
+/*.uk-panel img {
+  background-size: cover;
+} */
+
 header {
   padding: 20px 35px;
   background: var(--color3);
@@ -55,12 +64,4 @@ header nav ul li a:hover {
   color: var(--color1);
   border-radius: 15px;
   text-shadow: none;
-}
-
-#hero {
-  background-image: url("../images/cytonn-photography-n95VMLxqM2I-unsplash.jpeg");
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  height: 250px;
 }

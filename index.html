@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.9.1/dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.9.2/dist/css/uikit.min.css" />
     <title>Job Aid</title>
   </head>
 
@@ -31,22 +31,85 @@
       </nav>
     </header>
 
-    <section id="hero">
-      <p></p>
-    </section>
-
-    <section>
-        <h2>Careers in Demand</h2>
-        <div>
-            <h3 class="job-title"></h3>
-            <div>
-                <p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id necessitatibus dolores nam, maiores doloribus, cum magni amet earum cupiditate saepe rerum quis aliquid quibusdam consequatur eius mollitia reprehenderit! Ipsa commodi esse facere at, voluptates minima repellendus maiores dolor, totam excepturi tenetur nemo ex ab labore itaque id harum iusto neque.</p>
-                <img class= src="" alt="">
+    <div data-uk-slider>
+      <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+        <ul class="uk-slider-items uk-grid">
+          <li class="uk-width-4-5">
+            <div class="uk-panel">
+              <img src="./assets/images/developer.jpg" alt="mug on black coffee table" />
+              <div class="uk-position-center uk-text-center">
+                <h2 uk-slider-parallax="x: 100,-100">Software Developer</h2>
+                <p uk-slider-parallax="x: 200,-200">
+                  MEDIAN SALARY $107,510 UNEMPLOYMENT RATE 1.4% NUMBER OF JOBS 316,000
+                </p>
+              </div>
             </div>
-        </div>
-    </section>
+          </li>
+          <li class="uk-width-4-5">
+            <div class="uk-panel">
+              <img src="./assets/images/engineer.jpg" alt="" />
+              <div class="uk-position-center uk-text-center">
+                <h2 uk-slider-parallax="x: 100,-100">Mechanical Engineer</h2>
+                <p uk-slider-parallax="x: 200,-200">
+                  MEDIAN SALARY $88,430 UNEMPLOYMENT RATE 1.9% NUMBER OF JOBS 12,400
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="uk-width-4-5">
+            <div class="uk-panel">
+              <img src="./assets/images/psychiatrist.jpg" alt="" />
+              <div class="uk-position-center uk-text-center">
+                <h2 uk-slider-parallax="x: 100,-100">Psychiatrist</h2>
+                <p uk-slider-parallax="x: 200,-200">
+                  MEDIAN SALARY $208,000 UNEMPLOYMENT RATE 4.1% NUMBER OF JOBS 3,300
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="uk-width-4-5">
+            <div class="uk-panel">
+              <img src="./assets/images/security-analyst.jpg" alt="" />
+              <div class="uk-position-center uk-text-center">
+                <h2 uk-slider-parallax="x: 100,-100">Security Analyst</h2>
+                <p uk-slider-parallax="x: 200,-200">
+                  MEDIAN SALARY $99,730 UNEMPLOYMENT RATE 2.7% NUMBER OF JOBS 40,900
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="uk-width-4-5">
+            <div class="uk-panel">
+              <img src="./assets/images/statistician.jpg" alt="" />
+              <div class="uk-position-center uk-text-center">
+                <h2 uk-slider-parallax="x: 100,-100">Statistician</h2>
+                <p uk-slider-parallax="x: 200,-200">
+                  MEDIAN SALARY $91,160 UNEMPLOYMENT RATE 3.5% NUMBER OF JOBS 14,800
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <a
+          class="uk-position-center-left uk-position-small uk-hidden-hover"
+          href="#"
+          uk-slidenav-previous
+          uk-slider-item="previous"
+        ></a>
+        <a
+          class="uk-position-center-right uk-position-small uk-hidden-hover"
+          href="#"
+          uk-slidenav-next
+          uk-slider-item="next"
+        ></a>
+      </div>
+    </div>
 
     <footer></footer>
+
     <script src="./assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.9.2/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.9.2/dist/js/uikit-icons.min.js"></script>
   </body>
 </html>
