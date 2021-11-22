@@ -1,7 +1,71 @@
-#hero {
-    background-image: url("../images/cytonn-photography-n95VMLxqM2I-unsplash.jpeg");
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    height: 250px;
+:root {
+  --color1: white;
+  --color2: yellow;
+  --color3: blue;
+}
+
+/* body {
+  overflow: hidden;
+} */
+
+/*.uk-panel img {
+  background-size: cover;
+} */
+
+.advice-grid {
+  padding: 60px;
+}
+
+header {
+  padding: 20px 35px;
+  background: var(--color3);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 80%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 666;
+}
+
+header h1 {
+  font-weight: bold;
+  font-size: 36px;
+  color: var(--color1);
+  margin: 0;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header a {
+  text-decoration: none;
+  color: var(--color1);
+}
+
+header nav {
+  margin: 7px 0;
+}
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+header nav ul li a {
+  padding: 10px 15px;
+  font-weight: lighter;
+  font-size: 1.55vw;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header nav ul li a:hover {
+  background: var(--color2);
+  color: var(--color1);
+  border-radius: 15px;
+  text-shadow: none;
 }

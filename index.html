@@ -1,44 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.9.1/dist/css/uikit.min.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.9.2/dist/css/uikit.min.css" />
     <title>Job Aid</title>
-</head>
-<body>
-    <nav class="uk-background-muted uk-padding-small uk-navbar-container uk-flex uk-flex-row">
-        <h1 class="uk-navbar-left">Job-Aid</h1>
-        <a href="#job-search" class="uk-navbar-right">Job Search</a>
-        <a href="#recent" class="uk-navbar-right">Recent Searches</a>
-    </nav>
+  </head>
 
-    <section id="hero">
-        <p></p>
-    </section>
+  <body>
+    <header>
+      <div class="home-logo">
+        <h1>
+          <a href="/">Home</a>
+        </h1>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <a href="./search.html">Search Jobs</a>
+          </li>
+          <li>
+            <a href="./advice.html">Career Advice</a>
+          </li>
+          <li>
+            <a href="./about.html">About Us</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-    <section id="job-search" class="uk-padding-small">
-        <h2>Job Search</h2>
-        <form id="job-form">
-            <label>Job Title</label>
-            <input type="text" placeholder="Job Title" name="job-title">
-            <label>Salary</label>
-            <input type="text" placeholder="Expected Salary">
-            <label>Location</label>
-            <input type="text" placeholder="Zip Code">
-            <button id="submit-btn">Submit</button>
-        </form>
-    </section>
+    <div data-uk-slider>
+      <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+        <ul class="uk-slider-items uk-grid">
+          <li class="uk-width-4-5">
+            <div class="uk-panel">
+              <img src="./assets/images/developer.jpg" alt="mug on black coffee table" />
+              <div class="uk-position-center uk-text-center">
+                <h2 uk-slider-parallax="x: 100,-100">Software Developer</h2>
+                <p uk-slider-parallax="x: 200,-200">
+                  MEDIAN SALARY $107,510 UNEMPLOYMENT RATE 1.4% NUMBER OF JOBS 316,000
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="uk-width-4-5">
+            <div class="uk-panel">
+              <img src="./assets/images/engineer.jpg" alt="" />
+              <div class="uk-position-center uk-text-center">
+                <h2 uk-slider-parallax="x: 100,-100">Mechanical Engineer</h2>
+                <p uk-slider-parallax="x: 200,-200">
+                  MEDIAN SALARY $88,430 UNEMPLOYMENT RATE 1.9% NUMBER OF JOBS 12,400
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="uk-width-4-5">
+            <div class="uk-panel">
+              <img src="./assets/images/psychiatrist.jpg" alt="" />
+              <div class="uk-position-center uk-text-center">
+                <h2 uk-slider-parallax="x: 100,-100">Psychiatrist</h2>
+                <p uk-slider-parallax="x: 200,-200">
+                  MEDIAN SALARY $208,000 UNEMPLOYMENT RATE 4.1% NUMBER OF JOBS 3,300
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="uk-width-4-5">
+            <div class="uk-panel">
+              <img src="./assets/images/security-analyst.jpg" alt="" />
+              <div class="uk-position-center uk-text-center">
+                <h2 uk-slider-parallax="x: 100,-100">Security Analyst</h2>
+                <p uk-slider-parallax="x: 200,-200">
+                  MEDIAN SALARY $99,730 UNEMPLOYMENT RATE 2.7% NUMBER OF JOBS 40,900
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="uk-width-4-5">
+            <div class="uk-panel">
+              <img src="./assets/images/statistician.jpg" alt="" />
+              <div class="uk-position-center uk-text-center">
+                <h2 uk-slider-parallax="x: 100,-100">Statistician</h2>
+                <p uk-slider-parallax="x: 200,-200">
+                  MEDIAN SALARY $91,160 UNEMPLOYMENT RATE 3.5% NUMBER OF JOBS 14,800
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
 
-    <section id="recent" class="uk-padding-small">
-        <h2>Recent Searches</h2>
-    </section>
+        <a
+          class="uk-position-center-left uk-position-small uk-hidden-hover"
+          href="#"
+          uk-slidenav-previous
+          uk-slider-item="previous"
+        ></a>
+        <a
+          class="uk-position-center-right uk-position-small uk-hidden-hover"
+          href="#"
+          uk-slidenav-next
+          uk-slider-item="next"
+        ></a>
+      </div>
+    </div>
 
-    <footer>
+    <footer></footer>
 
-    </footer>
     <script src="./assets/js/script.js"></script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.9.2/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.9.2/dist/js/uikit-icons.min.js"></script>
+  </body>
 </html>
