@@ -1,10 +1,10 @@
 # job-aid
 
 ## Authors
-Hanan Dadras
-Caleb Manquera
-Gabriel Garcia-Ruiz
-Hector Romo
+- Hanan Dadras
+- Caleb Manquera
+- Gabriel Garcia-Ruiz
+- Hector Romo
 
 ## Name
 Job-Aid was chosen because it is descriptive and concise.
@@ -17,3 +17,13 @@ Job-Aid was developed using html, CSS, UI Kit, Javascript and two APIs to get jo
 
 ## Image of Application
 ![image](https://github.com/hectorromo06/job-aid/blob/develop/assets/images/job-aid-screenshot.png)
+
+## Deployment: 
+https://hectorromo06.github.io/job-aid/
+
+## Repository:
+https://github.com/hectorromo06/job-aid
+
+## Future Features
+- add APIs to dynamically bring users results of articles to the homepage and career advice
+- add ability to favorite search results
