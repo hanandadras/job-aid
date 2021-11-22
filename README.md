@@ -16,4 +16,4 @@ Unlike a traditional website, job-aid could have an added feature of posting art
 Job-Aid was developed using html, CSS, UI Kit, Javascript and two APIs to get jobs from locations in the United states. It is still in progress as many features will be added to it such as a live stockmarket window.
 
 ## Image of Application
-![image](https://github.com/hectorromo06/job-aid/blob/readMe/assets/images/job-aid-screenshot.png)
+![image](https://github.com/hectorromo06/job-aid/blob/develop/assets/images/job-aid-screenshot.png)
