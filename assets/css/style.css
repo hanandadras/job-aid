@@ -12,6 +12,10 @@
   background-size: cover;
 } */
 
+.advice-grid {
+  padding: 60px;
+}
+
 header {
   padding: 20px 35px;
   background: var(--color3);
