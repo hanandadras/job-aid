@@ -117,7 +117,6 @@ var test = function() {
     // getAPI(title,zip);
 }
 
-
 // if(searchHistoryEl != null) {
 //     searchHistoryEl.addEventListener("click", test);
 // }
