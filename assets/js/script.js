@@ -1,7 +1,6 @@
 var formEl = document.querySelector("#job-form");
 var searchEl = document.querySelector("#search-results")
 var recentSearchEl = document.querySelector("#recent-searches");
-var spinnerEl = document.querySelector("#spinner");
 var searchStorage = JSON.parse(localStorage.getItem("search"));
 var searchHistoryEl = document.querySelector("#searchId");
 var searchHistory = [];
@@ -29,8 +28,6 @@ function getAPI(title, zip) {
         .then(data => {
             console.log(data);
 
-            // spinnerEl.setAttribute("hidden", false);
-
             var headerEl = document.querySelector("#results-header");
             headerEl.removeAttribute("hidden");
 
@@ -45,8 +42,6 @@ function getAPI(title, zip) {
     
                 searchEl.appendChild(searchInfoEl);
             }
-
-            // spinnerEl.setAttribute("hidden", true);
 
         })
         .catch(err => {
@@ -65,7 +60,7 @@ var formHandler = function(event) {
 
     var titleInput = document.querySelector("input[name='job-title']").value;
     var zipInput = document.querySelector("input[name='zip-code']").value;
-    // var stateInput = document.querySelector("section[id='form-stacked-select']").value;
+    var stateInput = document.querySelector("select[id='form-stacked-select']").value;
 
 
     getAPI(titleInput, zipInput);
@@ -73,7 +68,7 @@ var formHandler = function(event) {
     var searchObj = {
         title: titleInput,
         zip: zipInput,
-        // state: stateInput
+        state: stateInput
     };
 
     searchHistory.push(searchObj);
@@ -107,8 +102,6 @@ var loadSearch = function () {
 
             // var stringTest = "#searchId" + i;
 
-            // console.log(stringTest)
-
             // searchHistoryEl = document.querySelector(stringTest);
 
             recentSearchEl.appendChild(recentSearchInfoEl);
@@ -120,7 +113,7 @@ var loadSearch = function () {
 loadSearch();
 
 var test = function() {
-    console.log("You clicked the search history! ");
+    console.log("You clicked the search history!");
     // getAPI(title,zip);
 }
 
@@ -130,6 +123,3 @@ var test = function() {
 // }
 
 formEl.addEventListener("submit", formHandler);
-
-
-// console.log(JSON.parse(localStorage.getItem("search")).length);
